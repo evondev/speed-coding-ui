@@ -1,0 +1,79 @@
+body {
+  background: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
+    no-repeat center / cover;
+  min-height: 100vh;
+  padding: 70px 85px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flash-list {
+  display: flex;
+}
+.flash-item {
+  padding: 40px;
+  background-color: white;
+  margin: 0 25px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.025);
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+}
+.flash-title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.flash-description {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.flash-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px auto;
+  border: 2px solid currentColor;
+  font-size: 55px;
+}
+.btn {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+.flash-icon-close {
+  color: #ccc;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.flash-item--success .flash-icon {
+  color: #5eca52;
+}
+.btn--continue {
+  background-color: #5eca52;
+  color: white;
+}
+.flash-item--danger {
+  background-color: rgba(232, 89, 76, 0.9);
+  color: white;
+}
+.btn--try-again {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.flash-item--danger .flash-icon-close {
+  color: white;
+}
